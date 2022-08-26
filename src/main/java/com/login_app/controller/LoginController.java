@@ -37,17 +37,4 @@ public class LoginController {
 		model.addAttribute("regs", allReg);
 		return "results";	
 	}
-	@RequestMapping("/delete")
-	public String deleteReg(@RequestParam("email") String email, ModelMap model) {
-		dao.deletOneReg(email);
-		List<Reg> allReg = dao.getAllReg();
-		model.addAttribute("regs", allReg);
-		return "results";
-	}
-	@RequestMapping("/getRegInfo")
-	public String getRegInfo(@RequestParam("email") String email, ModelMap model) {
-		Reg reg = dao.getOneReg(email);
-		model.addAttribute("reg", reg);
-		return "update_reg";
-	}
 }
