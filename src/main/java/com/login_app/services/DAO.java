@@ -12,9 +12,4 @@ public interface DAO {
 	public void saveReg(Reg reg);
 
 	public List<Reg> getAllReg();
-
-	public void deletOneReg(String email);
-
-	public Reg getOneReg(String email);
-
 }
