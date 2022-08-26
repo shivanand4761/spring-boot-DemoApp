@@ -17,8 +17,6 @@
 			<th>City</th>
 			<th>Email</th>
 			<th>Mobile</th>
-			<th>Delete</th>
-			<th>Update</th>
 		</tr>
 		<c:forEach var="reg" items="${regs}">
 		<tr>
@@ -26,8 +24,6 @@
 				<td>${reg.city}</td>
 				<td>${reg.email}</td>
 				<td>${reg.mobile}</td>
-				<td><a href="delete?email=${reg.email}">delete</a></td>
-				<td><a href="getRegInfo?email=${reg.email}">edit</a></td>
 		</tr>
 		</c:forEach>
 				</table>
